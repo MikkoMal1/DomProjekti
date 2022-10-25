@@ -27,10 +27,14 @@ h1 {
   #wrapper {
     width: 80%;
     margin: 0 auto;
-    background-color: white;
+    background-color: grey;
  }
 
 ul li:hover{
-    background-color:#EE7621;
+    background-color: lightcyan;
     }
-  
+
+   footer {
+    text-align: center;
+    color: black;
+}
