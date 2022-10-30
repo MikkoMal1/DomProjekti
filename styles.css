@@ -2,8 +2,10 @@ h1 {
   text-align: center;
   text-shadow: 6px 3px 4px #525252;
   font-family: 'Trebuchet MS', sans, serif;
-  color: red;
-  font-size: 50px;
+  color: black;
+  font-size: 60px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
   .lista {
@@ -13,6 +15,7 @@ h1 {
     font-weight: bold;
     position: absolute;
     left: 40%;
+    padding-bottom: 10px;
   }
   
   .syote{
@@ -24,13 +27,14 @@ h1 {
   }
 
   #wrapper {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
-    background-color: darkgray;
+    background-color: seashell;
+    padding-bottom: 40%;
  }
 
 ul li:hover{
-    background-color: lightcyan;
+    background-color: lightcoral;
     }
 
    footer {
@@ -38,6 +42,13 @@ ul li:hover{
     color: black;
 }
 
-.close{
-  
-}
+
+body {
+  background-color: lightcyan;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  background-image: url('ToDoListaKuva.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
