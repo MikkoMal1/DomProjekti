@@ -26,8 +26,12 @@ h1 {
   
   ul {
     list-style-position: inside;
+<<<<<<< Updated upstream
     list-style-type: none;
     line-break: auto;
+=======
+    list-style: none;
+>>>>>>> Stashed changes
   }
 
   #wrapper {
@@ -54,11 +58,22 @@ body {
   background-image: url('ToDoListaKuva.jpeg');
   background-repeat: no-repeat;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
+<<<<<<< Updated upstream
 .close{
   position: absolute;
   right: 0%;
 }
+=======
+.add-button {
+  background-color: #0000ff;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 1.2rem;
+}
+>>>>>>> Stashed changes
