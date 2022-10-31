@@ -1,6 +1,6 @@
 document.getElementById("nappi")
 
-// Create a "close" button and append it to each list item
+// Luodaan näppäin, jonka avulla listalta voidaan poistaa asioita
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
