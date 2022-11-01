@@ -11,8 +11,9 @@ for (i = 0; i < myNodelist.length; i++) {
   myNodelist[i].appendChild(span);
 }
 
+
 // Klikkaa "close" nappia poistaaksesi kohteen listalta
-var close = document.getElementsByClassName("close");
+  var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
