@@ -9,8 +9,8 @@ h1 {
 }
 
   .lista {
-    width: 350px;
-    height: 200px; 
+    width: 350x;
+    height: 100px; 
     font-family: 'Tahoma',sans, serif;
     font-weight: bold;
     position: absolute;
@@ -46,8 +46,7 @@ h1 {
   li {
     background-color: white;
     border: 1px solid;
-    border-color: black;
-    width: auto;
+    border-color: black; 
 }
 
 ul li:hover{
