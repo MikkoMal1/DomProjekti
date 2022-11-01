@@ -10,7 +10,7 @@
 
   .lista {
     width: 350px;
-    height: 100px; 
+    height: 200px; 
     font-family: 'Tahoma',sans, serif;
     font-weight: bold;
     position: absolute;
@@ -34,7 +34,7 @@
     margin: 0 auto;
     background-color: seashell;
     padding-bottom: 40%;
- }
+  }
   
   ul {
     list-style-position: inside;
@@ -47,7 +47,7 @@
     background-color: white;
     border: 1px solid;
     border-color: black;
-    
+   
   }
 
 ul li:hover{
