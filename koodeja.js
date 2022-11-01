@@ -11,7 +11,7 @@ for (i = 0; i < myNodelist.length; i++) {
   myNodelist[i].appendChild(span);
 }
 
-// Click on a close button to hide the current list item
+// Klikkaa "close" nappia poistaaksesi kohteen listalta
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -21,7 +21,7 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// Add a "checked" symbol when clicking on a list item
+// Lisää "checked" symbolin kun klikkaa jonkun kohteen listalta suoritetuksi
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
@@ -29,7 +29,7 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
-// Create a new list item when clicking on the "Add" button
+// Lisää uuden kohteen listalle kun klikkaa "Lisää" nappia
 function nappi() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
