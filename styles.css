@@ -9,7 +9,7 @@
   }
 
   .lista {
-    width: 350x;
+    width: 350px;
     height: 100px; 
     font-family: 'Tahoma',sans, serif;
     font-weight: bold;
@@ -47,7 +47,7 @@
     background-color: white;
     border: 1px solid;
     border-color: black;
-   
+    
   }
 
 ul li:hover{
