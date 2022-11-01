@@ -42,12 +42,6 @@ ul li:hover{
     background-color: rgb(224, 210, 237);
     }
 
-   footer {
-    text-align: center;
-    color: black;
-}
-
-
 body {
   background-color: lightcyan;
   padding-top: 25px;
@@ -58,10 +52,9 @@ body {
   background-size: cover;
 }
 
-
 .close{
   position: absolute;
-  right: 0%;
+  right: 25%;
   cursor: pointer;
 }
 
