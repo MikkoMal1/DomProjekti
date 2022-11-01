@@ -1,4 +1,4 @@
-h1 {
+  h1 {
   text-align: center;
   text-shadow: 6px 3px 4px #525252;
   font-family: 'Trebuchet MS', sans, serif;
@@ -6,7 +6,7 @@ h1 {
   font-size: 60px;
   padding-top: 20px;
   padding-bottom: 10px;
-}
+  }
 
   .lista {
     width: 350x;
@@ -39,15 +39,15 @@ h1 {
   ul {
     list-style-position: inside;
     list-style-type: none;
-    line-break: auto;
     list-style: none;
   }
 
   li {
     background-color: white;
     border: 1px solid;
-    border-color: black; 
-}
+    border-color: black;
+    line-break: strict; 
+  }
 
 ul li:hover{
     background-color: lightblue;
