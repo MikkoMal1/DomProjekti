@@ -56,16 +56,4 @@ function nappi() {
   }
 }
 
-// Save data to localStorage
-localStorage.setItem('key', JSON.stringify('value'));
-
-// Get saved data from localStorage
-localStorage.getItem('key') ? JSON.parse(localStorage.getItem('key')) : '';
-
-// Remove saved data from localStorage
-localStorage.removeItem('key');
-
-// Remove all saved data from localStorage
-localStorage.clear(); 
-
 
