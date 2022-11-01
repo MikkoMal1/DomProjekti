@@ -67,7 +67,7 @@ body {
 .close {
   position: absolute;
   font-size: 15px;
-  right: 25%;
+  right: 0%;
   cursor: pointer;
   border: 1px solid;
 }
