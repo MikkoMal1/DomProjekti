@@ -64,7 +64,7 @@ body {
   background-size: cover;
 }
 
-.close{
+.close {
   position: absolute;
   font-size: 15px;
   right: 25%;
@@ -72,8 +72,11 @@ body {
   border: 1px solid;
 }
 
+.close:hover {
+  background: lightcoral;
+}
+
 hr {
   height: 1px;
   background-color: black;
 }
-
