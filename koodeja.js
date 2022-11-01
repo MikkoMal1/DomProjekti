@@ -56,12 +56,6 @@ function nappi() {
   }
 }
 
-document.querySelector("input").addEventListener("keydown", function(event) {
-  if (event.keyCode === 13) {
-    console.log("Enter key detected.")
-  }
-});
-
 // Save data to localStorage
 localStorage.setItem('key', JSON.stringify('value'));
 
