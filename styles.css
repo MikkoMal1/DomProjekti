@@ -9,13 +9,9 @@
   }
 
   .lista {
-<<<<<<< HEAD
+
     width: 350px;
     height: 200px; 
-=======
-    width: 305px;
-    height: 100px; 
->>>>>>> b0f440c4584a09e08cf5e3bd0ab746595a4a20ff
     font-family: 'Tahoma',sans, serif;
     font-weight: bold;
     position: absolute;
