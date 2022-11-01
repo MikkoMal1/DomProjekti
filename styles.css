@@ -62,6 +62,7 @@ body {
 .close{
   position: absolute;
   right: 0%;
+  cursor: pointer;
 }
 
 .add-button {
@@ -73,3 +74,4 @@ body {
   padding: 7px;
   font-size: 1.2rem;
 }
+
