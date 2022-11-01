@@ -67,3 +67,5 @@ localStorage.removeItem('key');
 
 // Remove all saved data from localStorage
 localStorage.clear(); 
+
+
