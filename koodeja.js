@@ -29,13 +29,7 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
-function MyFunction() {
-  $("#pass").keypress(function(event) {
-    if (event.keyCode === 13) {
-        $("#MyFunction").click();
-    }
-});
-}
+
 
 // Lisää uuden kohteen listalle kun klikkaa "Lisää" nappia
 function nappi() {
@@ -63,12 +57,3 @@ function nappi() {
     }
   }
 }
-
-var input = document.getElementById('ConfirmInput').value;
-
-if(confirmInput.length == 0){
-   confirmEmail.style.border = "1px solid red";
-}else{
-   confirmInput.style.border = "1px solid black";
-}
-
