@@ -30,7 +30,6 @@ list.addEventListener('click', function(ev) {
 }, false);
 
 
-
 // Lisää uuden kohteen listalle kun klikkaa "Lisää" nappia
 function nappi() {
   var li = document.createElement("li");
@@ -57,3 +56,4 @@ function nappi() {
     }
   }
 }
+
