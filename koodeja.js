@@ -11,7 +11,6 @@ for (i = 0; i < myNodelist.length; i++) {
   myNodelist[i].appendChild(span);
 }
 
-
 // Klikkaa "close" nappia poistaaksesi kohteen listalta
   var close = document.getElementsByClassName("close");
 var i;
@@ -57,4 +56,11 @@ function nappi() {
   }
 }
 
+var input = document.getElementById('ConfirmInput').value;
+
+if(confirmInput.length == 0){
+   confirmEmail.style.border = "1px solid red";
+}else{
+   confirmInput.style.border = "1px solid black";
+}
 
