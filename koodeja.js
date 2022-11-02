@@ -29,6 +29,14 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
+function MyFunction() {
+  $("#pass").keypress(function(event) {
+    if (event.keyCode === 13) {
+        $("#MyFunction").click();
+    }
+});
+}
+
 // Lisää uuden kohteen listalle kun klikkaa "Lisää" nappia
 function nappi() {
   var li = document.createElement("li");
