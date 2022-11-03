@@ -63,9 +63,8 @@ function tallenna() {
   console.log()
   var input = document.getElementById('syote').value;
   var aa = JSON.parse(localStorage.getItem('tehtävät')) || []; 
-    aa.push(syote);
+    aa.push(input);
     localStorage.setItem('tehtävät', JSON.stringify(aa));
-
 }
 
 function hae() {
@@ -78,8 +77,34 @@ function hae() {
   for (i = 0; i < kpl; i++){
   console.log(lista[i])
   document.getElementById("ul").innerHTML+="<LI>"+lista[i]+"</LI>";
+
   }
 
 }
 
+}
+
+// toggle the value to completed and not completed
+function toggle(id) {
+  todos.forEach(function(item) {
+    // use == not ===, because here types are different. One is number and other is string
+    if (item.id == id) {
+      // toggle the value
+      item.completed = !item.completed;
+    }
+  });
+
+addToLocalStorage();
+}
+
+// deletes a todo from todos array, then updates localstorage and renders updated list to screen
+function deleteTodo(id) {
+  // filters out the <li> with the id and updates the todos array
+  syote = syote.filter(function(item) {
+    // use != not !==, because here types are different. One is number and other is string
+    return item.id != id;
+  });
+
+  // update the localStorage
+  addToLocalStorage();
 }

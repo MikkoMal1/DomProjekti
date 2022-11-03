@@ -18,7 +18,7 @@
   body {
     background-color: lightcyan;
     padding-top: 25px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     background-image: url('ToDoListaKuva.jpeg');
     background-repeat: no-repeat;
     background-position: center;
@@ -35,7 +35,8 @@
     width: 60%;
     margin: 0 auto;
     background-color: seashell;
-    padding-bottom: 40%;
+    padding-bottom: 37%;
+
   }
 
   .lista {
