@@ -83,28 +83,3 @@ function hae() {
 }
 
 }
-
-// toggle the value to completed and not completed
-function toggle(id) {
-  todos.forEach(function(item) {
-    // use == not ===, because here types are different. One is number and other is string
-    if (item.id == id) {
-      // toggle the value
-      item.completed = !item.completed;
-    }
-  });
-
-addToLocalStorage();
-}
-
-// deletes a todo from todos array, then updates localstorage and renders updated list to screen
-function deleteTodo(id) {
-  // filters out the <li> with the id and updates the todos array
-  syote = syote.filter(function(item) {
-    // use != not !==, because here types are different. One is number and other is string
-    return item.id != id;
-  });
-
-  // update the localStorage
-  addToLocalStorage();
-}
