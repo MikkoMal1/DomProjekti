@@ -63,7 +63,7 @@ function tallenna() {
   console.log()
   var input = document.getElementById('syote').value;
   var aa = JSON.parse(localStorage.getItem('tehtävät')) || []; 
-    aa.push(myInput);
+    aa.push(syote);
     localStorage.setItem('tehtävät', JSON.stringify(aa));
 
 }
