@@ -29,7 +29,6 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
-
 // Lisää uuden kohteen listalle kun klikkaa "Lisää" nappia
 function nappi() {
   var li = document.createElement("li");
@@ -54,6 +53,32 @@ function nappi() {
       var div = this.parentElement;
       div.style.display = "none";
     }
+    tallenna();
   }
 }
 
+
+function tallenna() {
+  console.log()
+  var input = document.getElementById('myInput').value;
+  var aa = JSON.parse(localStorage.getItem('tehtävät')) || []; 
+    aa.push(myInput);
+    localStorage.setItem('tehtävät', JSON.stringify(aa));
+
+}
+
+function hae() {
+  console.log()
+  var lista = JSON.parse(localStorage.getItem('tehtävät'));
+
+  if(lista != null){
+  let kpl = lista.length;
+
+  for (i = 0; i < kpl; i++){
+  console.log(lista[i])
+  document.getElementById("ul").innerHTML+="<LI>"+lista[i]+"</LI>";
+  }
+
+}
+
+}

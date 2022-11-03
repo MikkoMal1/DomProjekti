@@ -22,10 +22,15 @@
   
   .syote{
     text-align: center;
+    border-radius: 5px;
   }
 
   button {
     border-radius: 5px;
+  }
+
+  .addBtn:hover {
+    background-color: lightblue;
   }
 
   #wrapper {
@@ -95,17 +100,17 @@ hr {
 ul li.checked {
   background: lightgray;
   text-decoration: line-through;
-
+} 
   /* Add a "checked" mark when clicked on */
 ul li.checked::before {
   content: '';
   position: absolute;
-  border-color: #fff;
+  border-color: green;
   border-style: solid;
   border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
+  top: 5px;
+  left: 1px;
   transform: rotate(45deg);
-  height: 15px;
+  height: 16px;
   width: 7px;
 } 
