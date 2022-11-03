@@ -32,16 +32,16 @@ list.addEventListener('click', function(ev) {
 // Lisää uuden kohteen listalle kun klikkaa "Lisää" nappia
 function nappi() {
   var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value;
+  var inputValue = document.getElementById("syote").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
-  document.getElementById('myInput').style.borderColor = "red"; 
+  document.getElementById('syote').style.borderColor = "red"; 
   alert("Kirjoita jotain!");
   } else {
     document.getElementById("myUL").appendChild(li);
   }
-  document.getElementById("myInput").value = "";
+  document.getElementById("syote").value = "";
 
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
@@ -61,7 +61,7 @@ function nappi() {
 
 function tallenna() {
   console.log()
-  var input = document.getElementById('myInput').value;
+  var input = document.getElementById('syote').value;
   var aa = JSON.parse(localStorage.getItem('tehtävät')) || []; 
     aa.push(myInput);
     localStorage.setItem('tehtävät', JSON.stringify(aa));
