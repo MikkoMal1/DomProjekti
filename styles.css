@@ -15,6 +15,28 @@
     font-size: 25px;
   }
 
+  body {
+    background-color: lightcyan;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    background-image: url('ToDoListaKuva.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  hr {
+    height: 1px;
+    background-color: black;
+  }
+
+  #wrapper {
+    border-radius: 15px;
+    width: 60%;
+    margin: 0 auto;
+    background-color: seashell;
+    padding-bottom: 40%;
+  }
 
   .lista {
     width: 350px;
@@ -30,6 +52,9 @@
   
   .syote{
     text-align: center;
+  }
+
+  input {
     border-radius: 5px;
   }
 
@@ -39,14 +64,6 @@
 
   .addBtn:hover {
     background-color: lightblue;
-  }
-
-  #wrapper {
-    border-radius: 15px;
-    width: 60%;
-    margin: 0 auto;
-    background-color: seashell;
-    padding-bottom: 40%;
   }
   
   ul {
@@ -73,16 +90,6 @@ ul li:hover{
     background-color: lightblue;
     }
 
-body {
-  background-color: lightcyan;
-  padding-top: 25px;
-  padding-bottom: 20px;
-  background-image: url('ToDoListaKuva.jpeg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 .close {
   position: absolute;
   font-size: 15px;
@@ -97,11 +104,6 @@ body {
 
 .close:hover {
   background: lightcoral;
-}
-
-hr {
-  height: 1px;
-  background-color: black;
 }
 
 /* Listan taustaväri muuttuu ja teksti yliviivataan kun tehtävän klikkaa suoritetuksi */
@@ -122,17 +124,3 @@ ul li.checked::before {
   height: 16px;
   width: 7px;
 } 
-
-textarea.required, input.required  {
-  border: 1px solid red;
-  background-color: #eee;
- }
-
-input {
-  border-radius: 5px;
-}
-
-/* removing the highlight on input text on select / click */
-input::selection {
-  background-color: transparent;
-}
