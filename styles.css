@@ -114,3 +114,17 @@ ul li.checked::before {
   height: 16px;
   width: 7px;
 } 
+
+textarea.required, input.required  {
+  border: 1px solid red;
+  background-color: #eee;
+ }
+
+input {
+  border-radius: 5px;
+}
+
+/* removing the highlight on input text on select / click */
+input::selection {
+  background-color: transparent;
+}

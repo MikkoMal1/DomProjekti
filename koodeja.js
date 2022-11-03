@@ -36,7 +36,8 @@ function nappi() {
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
-    alert("Kirjoita jotain!");
+  document.getElementById('myInput').style.borderColor = "red"; 
+  alert("Kirjoita jotain!");
   } else {
     document.getElementById("myUL").appendChild(li);
   }
