@@ -60,7 +60,7 @@ function nappi() {
 
 function tallenna() {
   console.log()
-  var lista = document.getElementById('syote').value;
+  var list = document.getElementById('syote').value;
   var aa = JSON.parse(localStorage.getItem('tehtävät')) || []; 
     aa.push(myUL);
     localStorage.setItem('tehtävät', JSON.stringify(aa));
@@ -82,3 +82,5 @@ function hae() {
 }
 
 }
+
+
