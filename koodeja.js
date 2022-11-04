@@ -39,7 +39,7 @@ function nappi() {
   document.getElementById('syote').style.borderColor = "red"; 
   alert("Kirjoita jotain!");
   } else {
-    document.getElementById("myUL").appendChild(li);
+    document.getElementById("ul").appendChild(li);
   }
   document.getElementById("syote").value = "";
 
@@ -62,7 +62,7 @@ function tallenna() {
   console.log()
   var list = document.getElementById('syote').value;
   var aa = JSON.parse(localStorage.getItem('tehtävät')) || []; 
-    aa.push(myUL);
+    aa.push(ul);
     localStorage.setItem('tehtävät', JSON.stringify(aa));
 }
 
@@ -75,7 +75,7 @@ function hae() {
 
   for (i = 0; i < kpl; i++){
   console.log(lista[i])
-  document.getElementById("myUL").innerHTML+="<LI>"+lista[i]+"</LI>";
+  document.getElementById("MyUL").innerHTML+="<LI>"+lista[i]+"</LI>";
 
   }
 
