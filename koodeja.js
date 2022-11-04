@@ -1,4 +1,5 @@
 document.getElementById("nappi")
+hae();
 
 // Luodaan näppäin, jonka avulla listalta voidaan poistaa asioita
 var myNodelist = document.getElementsByTagName("LI");
@@ -29,17 +30,19 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
+
 // Lisää uuden kohteen listalle kun klikkaa "Lisää" nappia
-function nappi() {
+function uusinappi() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("syote").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
+  tallenna(inputValue);
   if (inputValue === '') {
   document.getElementById('syote').style.borderColor = "red"; 
   alert("Kirjoita jotain!");
   } else {
-    document.getElementById("ul").appendChild(li);
+    document.getElementById("tasklist").appendChild(li);
   }
   document.getElementById("syote").value = "";
 
@@ -58,29 +61,32 @@ function nappi() {
   }
 }
 
-function tallenna() {
-  console.log()
-  var list = document.getElementById('syote').value;
-  var aa = JSON.parse(localStorage.getItem('tehtävät')) || []; 
-    aa.push(ul);
+function tallenna(value) {
+  var aa = JSON.parse(localStorage.getItem('tehtävät'));
+
+      if(aa == null){
+        aa = [];
+      }
+    
+  taskObj = {
+      "task": value
+    }
+
+    aa.push(taskObj);
     localStorage.setItem('tehtävät', JSON.stringify(aa));
 }
 
 function hae() {
-  console.log()
   var lista = JSON.parse(localStorage.getItem('tehtävät'));
 
   if(lista != null){
   let kpl = lista.length;
 
   for (i = 0; i < kpl; i++){
-  console.log(lista[i])
-  document.getElementById("MyUL").innerHTML+="<LI>"+lista[i]+"</LI>";
-
-  }
-
-}
+    var randomUl = document.getElementById("tasklist").innerHTML;
+    lista = "<LI>"+lista[i]+"</LI>";
+    }
 
 }
 
-
+}
