@@ -113,7 +113,6 @@
     text-decoration: line-through;
   } 
 
-  /* Lisää "suoritettu" merkin kun listalta klikkaa tehtävää */
   ul li.checked::before {
     content: '';
     position: absolute;
@@ -126,3 +125,7 @@
     height: 16px;
     width: 7px;
   } 
+
+  .myUL {
+    display: none;
+  }

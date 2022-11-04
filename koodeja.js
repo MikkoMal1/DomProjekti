@@ -21,7 +21,7 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// Lisää "checked" symbolin kun klikkaa jonkun kohteen listalta suoritetuksi
+// Lisää "suoritettu" symbolin kun klikkaa jonkun kohteen listalta suoritetuksi
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
@@ -58,12 +58,11 @@ function nappi() {
   }
 }
 
-
 function tallenna() {
   console.log()
-  var input = document.getElementById('syote').value;
+  var lista = document.getElementById('syote').value;
   var aa = JSON.parse(localStorage.getItem('tehtävät')) || []; 
-    aa.push(input);
+    aa.push(myUL);
     localStorage.setItem('tehtävät', JSON.stringify(aa));
 }
 
@@ -76,7 +75,7 @@ function hae() {
 
   for (i = 0; i < kpl; i++){
   console.log(lista[i])
-  document.getElementById("ul").innerHTML+="<LI>"+lista[i]+"</LI>";
+  document.getElementById("myUL").innerHTML+="<LI>"+lista[i]+"</LI>";
 
   }
 
